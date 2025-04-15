@@ -1,20 +1,8 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
       {
-        "src": "apexloanserver/server.js",
-        "use": "@vercel/node",
-        "config": { "maxLambdaSize": "50mb" }
-      },
-      {
-        "src": "apexloan/package.json",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "build" }
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
-    ],
-    "routes": [
-      { "src": "/api/(.*)", "dest": "apexloanserver/server.js" },
-      { "src": "/(.*)", "dest": "apexloan/build/$1" }
     ]
   }
-  
