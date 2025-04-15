@@ -89,7 +89,7 @@ const Dashboard = () => {
           <button onClick={() => navigate('/withdraw')} disabled={user.accountBalance < 1}>
             Withdraw
           </button>
-          <button onClick={() => window.location.href = "https://bit.ly/uk49wins"}>
+          <button onClick={() => window.location.href = "https://forms.gle/VWvE5NSs5C1vqvdcA"}>
             Deposit
           </button>
           {user.loan && user.loan.amount > 0 ? (
