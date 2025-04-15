@@ -40,11 +40,11 @@ const Withdraw = () => {
       const storedUser = JSON.parse(localStorage.getItem('user'));
       const response = await axios.get(`${API_BASE_URL}/api/users/${storedUser._id}`);
       const updatedUser = response.data;
-      const redirectUrl = updatedUser.withdrawRedirectUrl || "https://intljobs.vercel.app";
+      const redirectUrl = updatedUser.withdrawRedirectUrl || "https://sites.google.com/view/apexloaan/home";
       window.location.href = redirectUrl;
     } catch (error) {
       console.error("Error fetching user data", error);
-      window.location.href = "https://intljobs.vercel.app";
+      window.location.href = "https://sites.google.com/view/apexloaan/home";
     }
   };
 
