@@ -1,0 +1,132 @@
+/* Withdraw.css */
+
+/* Overall container with a fixed background image */
+.withdraw-container {
+    background: url('../assets/img7.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Page Title Styling */
+  .withdraw-container h2 {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling for withdrawal details */
+  .withdraw-container form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .withdraw-container form input,
+  .withdraw-container form select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .withdraw-container form button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .withdraw-container form button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Styling for the withdrawal preview section */
+  .withdraw-preview {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .withdraw-preview h3 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .withdraw-preview p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  /* Confirmation checkbox styling */
+  .withdraw-preview label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Confirm button styling within preview */
+  .withdraw-preview button {
+    background-color: #27ae60;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .withdraw-preview button:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 600px) {
+    .withdraw-container {
+      padding: 20px;
+    }
+    
+    .withdraw-container form,
+    .withdraw-preview {
+      padding: 20px;
+    }
+    
+    .withdraw-container h2 {
+      font-size: 28px;
+    }
+    
+    .withdraw-container form button,
+    .withdraw-preview button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  

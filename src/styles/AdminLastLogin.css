@@ -1,0 +1,19 @@
+/* apexloan/src/styles/AdminLastLogin.css */
+.admin-last-login {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .admin-last-login table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-last-login th,
+  .admin-last-login td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  

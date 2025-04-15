@@ -1,0 +1,16 @@
+/* apexloan/src/styles/AdminMessages.css */
+.admin-messages {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .admin-messages form input,
+  .admin-messages form textarea,
+  .admin-messages form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+  

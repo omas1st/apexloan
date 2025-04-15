@@ -1,0 +1,114 @@
+/* Loan.css */
+
+/* Overall container styling with a fixed background image */
+.loan-container {
+    background: url('../assets/img4.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Heading style */
+  .loan-container h2 {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+    margin-bottom: 30px;
+  }
+  
+  /* Form container styling */
+  .loan-container form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Select element styling */
+  .loan-container form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  /* Payback info paragraph styling */
+  .loan-container form p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 10px 0;
+  }
+  
+  /* Label for terms agreement styling */
+  .loan-container form label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+  }
+  
+  /* Button styling */
+  .loan-container form button {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loan-container form button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Message styling */
+  .loan-container > p {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .loan-container {
+      padding: 20px 10px;
+    }
+    
+    .loan-container h2 {
+      font-size: 28px;
+    }
+    
+    .loan-container form {
+      padding: 20px;
+      gap: 15px;
+    }
+    
+    .loan-container form button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  

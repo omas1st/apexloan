@@ -1,0 +1,37 @@
+/* apexloan/src/styles/AdminUserManagement.css */
+.admin-user-management {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .add-user {
+    margin-bottom: 20px;
+  }
+  
+  .add-user input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .add-user button {
+    padding: 5px 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .message {
+    color: green;
+    margin-bottom: 10px;
+  }
+  

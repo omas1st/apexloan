@@ -1,0 +1,49 @@
+/* apexloan/src/styles/AdminConfirmation.css */
+.admin-confirmation {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admin-confirmation .search-section {
+    margin-bottom: 20px;
+  }
+  
+  .admin-confirmation input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .admin-confirmation button {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .admin-confirmation .profile-section {
+    margin-top: 20px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+  }
+  
+  .admin-confirmation .url-config-section {
+    margin-top: 20px;
+  }
+  
+  .admin-confirmation .url-entry {
+    margin-bottom: 10px;
+  }
+  
+  .admin-confirmation .url-entry input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 6px;
+    margin-right: 10px;
+  }
+  
+  .admin-confirmation .url-entry label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
