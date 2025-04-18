@@ -66,7 +66,25 @@ const Register = () => {
         <select name="country" onChange={handleChange} required>
           <option value="">Select Country</option>
           <option value="South Africa">South Africa</option>
-          <option value="Other">Other</option>
+          <option value="United Kingdom">United Kingdom</option>
+  <option value="United States">United States</option>
+  <option value="Uruguay">Uruguay</option>
+          <option value="Sweden">Sweden</option>
+  <option value="Switzerland">Switzerland</option>
+        <option value="Netherlands">Netherlands</option>
+            <option value="New Zealand">New Zealand</option>
+        <option value="Italy">Italy</option>
+            <option value="Jamaica">Jamaica</option>
+            <option value="Japan">Japan</option>
+        <option value="France">France</option>
+        <option value="Georgia">Georgia</option>
+            <option value="Germany">Germany</option>
+        <option value="Canada">Canada</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="France">France</option>
+        <option value="Other">Other</option>
         </select>
         <input name="homeAddress" placeholder="Home Address" onChange={handleChange} />
         <div className="account-container">
