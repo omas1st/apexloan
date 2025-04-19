@@ -1,6 +1,6 @@
-// apexloan/src/pages/Loan.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Loan.css';
 
 const API_BASE_URL = 'https://apexloanserver.vercel.app';
@@ -13,6 +13,18 @@ const Loan = () => {
   const [payback, setPayback] = useState(0);
   const [agreed, setAgreed] = useState(false);
   const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [applySuccess, setApplySuccess] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (applySuccess) {
+      const timer = setTimeout(() => {
+        navigate('/dashboard');
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [applySuccess, navigate]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -45,17 +57,19 @@ const Loan = () => {
       return;
     }
     try {
-      // Updated API endpoint
+      setIsSubmitting(true);
       const response = await axios.post(`${API_BASE_URL}/api/loan/apply`, {
         userId: storedUser._id,
         ...loanData
       });
-      // Update stored user with new account balance
       const updatedUser = { ...storedUser, accountBalance: response.data.accountBalance };
       localStorage.setItem('user', JSON.stringify(updatedUser));
       setMessage(response.data.message || "Loan successfully approved, kindly go to your dashboard to withdraw to your bank account");
+      setApplySuccess(true);
     } catch (err) {
       setMessage(err.response?.data?.message || "Loan application error");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -95,7 +109,9 @@ const Loan = () => {
         <label>
           <input type="checkbox" onChange={e => setAgreed(e.target.checked)} required /> I confirm that the information provided is true and accurate to the best of my knowledge. i understand that providing false information may result in loan denial or legal action. 
         </label>
-        <button type="submit">Apply</button>
+        <button type="submit" disabled={isSubmitting || applySuccess}>
+          {isSubmitting ? 'Applying...' : applySuccess ? 'Done' : 'Apply'}
+        </button>
       </form>
       {message && <p>{message}</p>}
     </div>
