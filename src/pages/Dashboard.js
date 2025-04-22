@@ -120,7 +120,7 @@ const Dashboard = () => {
             {user.notifications.map((note, idx) => <li key={idx}>{note}</li>)}
           </ul>
         ) : (
-          <p>No new notifications.</p>
+          <p>Repayment Loan Period, Short Loan: 90days, Medium Loan: 150 days, Long Loan: 300 days. You can request for a loan period extension. Payback method: Short Loan: You're to pay back minimum of 25% of your loan total payback every month, Medium Loan: minimum of 15% of your loan pay back, Long Loan: minimum of 10% of your loan pay back, is to be paid back every month. For more enquires, Kindly send us a message.</p>
         )}
       </div>
     </div>
